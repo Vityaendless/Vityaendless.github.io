@@ -1,0 +1,430 @@
+/*---ОБЩИЕ----*/
+@font-face {
+    font-family: Montserrat; /* Имя шрифта */
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body{
+    width: auto;
+    height: 1343px;
+    min-width: 320px;
+    max-width: 1930px;
+    margin:0;
+    padding:0;
+    background-color: #ffffff;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;*/
+    font-size:14px;
+    line-height: 17px;
+}
+
+ul{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+h2, p{
+        margin: 0;
+        padding: 0;
+}
+
+/*------------------------*/
+
+/*----ОБЩИЕ СТИЛИ ДЛЯ ЛОГОТИПА-----*/
+.logo{
+    position: absolute;
+    width: 53.19px;
+    height:12.95px;
+    left:13.3681%;
+}
+
+.logo::before{
+    position: absolute;
+    top: -13.33px;
+    left: -52.5px;
+    content:"";
+    height: 40px;
+    width: 40px;
+    background-image: url(../img/Logo.svg);
+    background-repeat: no-repeat;
+}
+/*---------*/
+
+/*-----Шапка------*/
+header{
+    position: relative;
+    width: inherit;
+    min-height: 5.2122%;
+    height: auto;
+    padding:0 9.7222% 0 9.7222%;
+    max-height: 200px;
+}
+
+header .logo{
+    top:40.4714%;
+}
+
+/*--------НАВИГАЦИЯ В ШАПКЕ------*/
+
+header .header_navigation{
+    margin-top: 1.9374%;
+    float: left;
+    margin-left: /*531px;*/36.875%;
+    position: relative;
+}
+
+header .header_navigation li{
+    color: rgba(31,32,65,0.5);
+}
+
+header .header_navigation > ul > li{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    height:18px;
+}
+
+header .header_navigation > ul > li:last-child{
+    margin-right: 41px;
+}
+
+header .header_navigation .was_included::before{
+    position: absolute;
+    content:"";
+    top:5px;
+    left: 110%;
+    height: 5px;
+    width: 5px;
+    border-bottom: 2px solid rgba(31,32,65,0.5);
+    border-right: 2px solid rgba(31,32,65,0.5);
+    background-repeat: no-repeat;
+    transform: rotate(45deg);
+}
+
+header .header_navigation ul li > ul {
+    display: none;
+}
+
+header .header_navigation ul li:hover > ul {
+    display: block;
+    position: absolute; 
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+header .header_navigation ul li > ul:hover {
+    display: block;
+    position: absolute; 
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+/*-----КНОПКИ---------*/
+
+header .button{
+    float: right;
+    height: 30px;
+    border:2px solid #bc9cff;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size:85.7143%; /*12px;*/
+    line-height:88.2353%; /*15px;*/
+    text-transform: uppercase;
+    margin-top: 1.3423%;
+}
+
+header #auth{
+    width: 6.04166%;
+    min-width: 75px;
+    color:#BC9CFF;
+    background-color: inherit;
+    margin-bottom: 5px;
+}
+
+header #check{
+    width: 13.6111%;
+    min-width: 225px;
+    color:#ffffff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    margin-left: 1.3888%;
+}
+
+header .clearfix{
+    clear: both;
+}
+
+/*----СОДЕРЖАНИЕ СТРАНИЦЫ--------*/
+.main{
+    position: relative;
+    min-height: 60.5244%;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    background-image: url(../img/fon-on-landing-page.png);
+    background-size: /*1534px 1022px*/100% 100%;
+    background-repeat: no-repeat;
+}
+
+.main .checkform{
+    position: absolute;
+    top: 15%;
+    left: 9.7222%;
+    width: 26.25%;
+    max-width: 500px;
+    min-width: 255px;
+    height: 44.7653%;
+    background-color: #ffffff;
+    border:1px solid rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.main .checkform h2{
+    position: absolute;
+    width: 84.6561%;
+    height: 16.1290%;
+    left: 7.9365%;
+    top:10.7527%;
+    font-size:171.4286%; /*24px;*/
+    line-height:176,4706%; /*30px;*/
+    font-family: "Quicksand", "Arial", sans-serif;
+    color: #1f2041;
+}
+
+.main .checkform .info .check{
+    position: absolute;  
+    width: 81.8421%;    
+    height: 4.0107%;    
+    top: 32.2581%;     
+    text-transform: uppercase;  
+    font-weight: bold; 
+}
+
+.main .checkform .info .in{
+    left: 7.8947%;
+}
+
+.main .checkform .info .out{
+    left: 52.9101%;
+}
+
+.main .checkform .info .checkinput{
+    position: absolute;
+    width: 39.6825%;
+    height: 11.7647%;
+    top:37.7527%;
+    border-color: rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height:105.8823%; /*18px;*/
+    color: rgba(31,32,65,0.75);
+    text-transform: uppercase;
+    padding: 11.56px 15px 8.44px 15px;
+}
+
+.main .checkform .info #checkin{
+    left: 7.8947%;
+}
+
+.main .checkform .info #checkout{
+    left: 52.6315%;
+}
+
+.main .checkform .info .guests{
+    position: absolute;
+    width: 11.3158%;
+    height: 4.0107%;
+    left: 7.8947%;
+    top: 54.8128%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main .checkform .info #guests{
+    position: absolute;
+    width: 84.2105%;
+    height: 11.7647%;
+    left: 7.8947%;
+    top: 60.4839%;
+    border-color: rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 105.8823%;/*18px;*/
+    color: rgba(31,32,65,0.75);
+    padding: 13px 15px;
+}
+
+.main .checkform .info .button{
+    position: absolute;
+    border:2px solid #bc9cff;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size:85.7143%; /*12px;*/
+    line-height:88.2353%; /*15px;*/
+    text-transform: uppercase;
+    width: 84.2105%;
+    height: 11.7670%;
+    top: 80.6451%;
+    left: 7.8947%;
+    color:#ffffff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.main .motto{
+    position: absolute;
+    min-width: 20.625%;
+    max-width: 25%;
+    width: auto;
+    min-height:  4.6967%;
+    height: auto;
+    bottom:2.1661%;
+    right: 9.7222%;
+    text-align: right;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31,32,65,0.75);
+}
+
+footer{
+    position: relative;
+    width:inherit;
+    height: 32.9114%;
+}
+
+footer .links{
+    margin-left: 45%;
+}
+
+footer .links .logo{
+    top:22.6244%;
+    }
+
+footer .links > p{
+    position: absolute;
+    min-height: 16.2896%;
+    height: auto;
+    max-width: 18.0555%;
+    width: auto;
+    top: 36.1991%;
+    left:9.7222%;
+    line-height: 24px;
+    color: rgba(31,32,65,0.75);
+}
+
+footer .links .footer_navigation h2{
+    text-transform: uppercase;
+    font-size: 85.7143%;
+    line-height: 88.2353%;
+    font-weight: bold; 
+}
+
+footer .links .footer_navigation{
+    display: inline-block;
+    margin-right: 10%;
+    margin-top:7.5746%;
+    vertical-align: top;
+}
+
+footer .links div:nth-of-type(5){
+    margin-right: 0;
+} 
+
+footer .links .footer_navigation{
+    position: relative;
+}
+
+footer .links .footer_navigation ul{
+    height: auto;
+}
+
+footer .links .footer_navigation div{
+    position: absolute;
+}
+
+footer .links .footer_navigation ul li,
+footer .links .footer_navigation p{
+    margin:11.9048% 0;
+    color: rgba(31,32,65,0.5);
+}
+
+
+
+footer .links .footer_navigation p{
+    width:18.0555%;
+    height:10.8597%;
+}
+
+footer .links .footer_navigation #email{
+    border: 1px solid rgba(31,32,65,0.25);
+    border-right: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: rgba(31,32,65,0.25);
+    width:200px;/*18.0555%;*/
+    height:44px;
+    padding: 12px 15px 8px 15px;
+}
+/*--------------------------------------------------*/
+footer .links .footer_navigation .newsletter{
+    position: relative;
+/*    border: 1px solid black;*/
+}
+
+footer .links .footer_navigation .newsletter .letters{
+    position: relative;
+    border: none;
+    border-right: 1px solid rgba(31,32,65,0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: rgba(31,32,65,0.25);
+    width:44px;/*18.0555%;*/
+    height:41px;
+    left: 156px;
+    top: -43px;
+    background-color: #ffffff;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+/*--------------------------------------------------*/
+
+footer .copyright{
+    position: relative;
+    width: inherit;
+    height: 15.8371%;
+    border-top:1px solid rgba(31, 32, 65, 0.75);
+    top: 53%;
+}
+
+footer .copyright p{
+    position: absolute;
+    left:9.7222%;
+    top:38.5714%;
+    width: 25.4861%;
+    height: 25.7143%;
+    color: rgba(31, 32, 65, 0.75);
+    line-height: 141.1765%;
+}
+
+footer .copyright .social_networks{
+    position: absolute;
+    left: 82.5%;
+    top:34.2857%;
+}
+
+footer .copyright .social_networks a{
+    margin-right: 20px;
+}
+
+footer .copyright .social_networks a:last-child{
+    margin-right: 0;
+}
+
