@@ -136,7 +136,7 @@ header .header_navigation ul li > ul:hover {
 
 header .button{
     float: right;
-    height: 32px;
+    height: 34px;
     border:2px solid #bc9cff;
     border-radius: 22px;
     font-weight:600;
@@ -152,14 +152,14 @@ header .button{
 }
 
 header #auth{
-    width: 81px;
+    width: 80px;
     color:#BC9CFF;
     background-color: inherit;
 /*    margin-bottom: 5px;*/
 }
 
 header #check{
-    width: 192px;
+    width: 190px;
     color:#ffffff;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
