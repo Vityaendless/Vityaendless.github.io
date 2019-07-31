@@ -98,7 +98,7 @@ header .header_navigation > ul > li{
 }
 
 header .header_navigation .is_included{
-    margin-right:40px; /*44px;*/
+    margin-right:38px; /*44px;*/
 }
 
 header .header_navigation .is_included::before{
