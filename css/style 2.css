@@ -136,7 +136,7 @@ header .header_navigation ul li > ul:hover {
 
 header .button{
     float: right;
-    height: 34px;
+    height: 32px;
     border:2px solid #bc9cff;
     border-radius: 22px;
     font-weight:600;
@@ -152,7 +152,7 @@ header .button{
 }
 
 header #auth{
-    width: 83px;
+    width: 81px;
     color:#BC9CFF;
     background-color: inherit;
 /*    margin-bottom: 5px;*/
