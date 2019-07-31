@@ -14,8 +14,7 @@
 body{
     width: auto;
     height: 1343px;
-    min-width: 320px;
-    max-width: 1930px;
+    width: 1440px;
     margin:0;
     padding:0;
     background-color: #ffffff;
@@ -29,6 +28,8 @@ ul{
     list-style: none; 
     padding: 0;
     margin: 0;
+    font-size:14px;
+    line-height: 17px;
 }
 
 h2, p{
@@ -41,9 +42,10 @@ h2, p{
 /*----ОБЩИЕ СТИЛИ ДЛЯ ЛОГОТИПА-----*/
 .logo{
     position: absolute;
+    float: left;
     width: 53.19px;
     height:12.95px;
-    left:13.3681%;
+    left:192.5px;
 }
 
 .logo::before{
@@ -62,22 +64,24 @@ h2, p{
 header{
     position: relative;
     width: inherit;
-    min-height: 5.2122%;
-    height: auto;
-    padding:0 9.7222% 0 9.7222%;
-    max-height: 200px;
+    box-sizing: border-box;
+    height: 70px;
+    padding:0 140px 0 140px;
+    font-size:14px;
+    line-height: 17px;
+    font-weight: bold;
 }
 
 header .logo{
-    top:40.4714%;
+    top:28.33px;
 }
 
 /*--------НАВИГАЦИЯ В ШАПКЕ------*/
 
 header .header_navigation{
-    margin-top: 1.9374%;
+    margin-top: 26px;
     float: left;
-    margin-left: /*531px;*/36.875%;
+    margin-left: 391px;
     position: relative;
 }
 
@@ -88,21 +92,22 @@ header .header_navigation li{
 header .header_navigation > ul > li{
     position: relative;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 17px;
     height:18px;
+    font-size: 14px;
 }
 
-header .header_navigation > ul > li:last-child{
-    margin-right: 41px;
+header .header_navigation .is_included{
+    margin-right:40px; /*44px;*/
 }
 
-header .header_navigation .was_included::before{
+header .header_navigation .is_included::before{
     position: absolute;
     content:"";
     top:5px;
-    left: 110%;
-    height: 5px;
-    width: 5px;
+    left: 112%;
+    height: 6px;
+    width: 6px;
     border-bottom: 2px solid rgba(31,32,65,0.5);
     border-right: 2px solid rgba(31,32,65,0.5);
     background-repeat: no-repeat;
@@ -131,31 +136,33 @@ header .header_navigation ul li > ul:hover {
 
 header .button{
     float: right;
-    height: 30px;
+    height: 34px;
     border:2px solid #bc9cff;
     border-radius: 22px;
-    font-weight: bold;
-    font-size:85.7143%; /*12px;*/
-    line-height:88.2353%; /*15px;*/
+    font-weight:600;
+    font-size:12px;
+    line-height:15px;
     text-transform: uppercase;
-    margin-top: 1.3423%;
+    margin-top: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 9px 20px 10px 20px;
+    font-style: normal;
 }
 
 header #auth{
-    width: 6.04166%;
-    min-width: 75px;
+    width: 87px;
     color:#BC9CFF;
     background-color: inherit;
-    margin-bottom: 5px;
+/*    margin-bottom: 5px;*/
 }
 
 header #check{
-    width: 13.6111%;
-    min-width: 225px;
+    width: 196px;
     color:#ffffff;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    margin-left: 1.3888%;
+    margin-left: 20px;
 }
 
 header .clearfix{
@@ -165,23 +172,26 @@ header .clearfix{
 /*----СОДЕРЖАНИЕ СТРАНИЦЫ--------*/
 .main{
     position: relative;
-    min-height: 60.5244%;
-    height: auto;
-    max-width: 100%;
-    width: auto;
+    height: 830px;
+    width: inherit;
     background-image: url(../img/fon-on-landing-page.png);
-    background-size: /*1534px 1022px*/100% 100%;
+    background-size:auto 900px;/*1534px 1000px*/
+    background-position:0 -70px;
     background-repeat: no-repeat;
+    font-family: "Montserrat", "Arial", serif;
+    font-size: 12px;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .main .checkform{
     position: absolute;
-    top: 15%;
-    left: 9.7222%;
-    width: 26.25%;
-    max-width: 500px;
-    min-width: 255px;
-    height: 44.7653%;
+    top: 70px;
+    left: 140px;
+    width: 380px;
+    height: 374px;
     background-color: #ffffff;
     border:1px solid rgba(0,0,0,0.12);
     box-sizing: border-box;
@@ -191,77 +201,82 @@ header .clearfix{
 
 .main .checkform h2{
     position: absolute;
-    width: 84.6561%;
-    height: 16.1290%;
-    left: 7.9365%;
-    top:10.7527%;
-    font-size:171.4286%; /*24px;*/
-    line-height:176,4706%; /*30px;*/
+    text-align:left;
+    width: 280px;
+    height: 65px;
+    left: 30px;
+    top:40px;
+    font-size:24px;
+    line-height:30px;
+    text-transform: none;
     font-family: "Quicksand", "Arial", sans-serif;
+    letter-spacing: 0.06em;
     color: #1f2041;
 }
 
 .main .checkform .info .check{
     position: absolute;  
-    width: 81.8421%;    
-    height: 4.0107%;    
-    top: 32.2581%;     
-    text-transform: uppercase;  
-    font-weight: bold; 
+    width: 83px;    
+    height: 15px;    
+    top: 120px; 
 }
 
 .main .checkform .info .in{
-    left: 7.8947%;
+    left: 30px;
 }
 
 .main .checkform .info .out{
-    left: 52.9101%;
+    left: 200px;
 }
 
 .main .checkform .info .checkinput{
     position: absolute;
-    width: 39.6825%;
-    height: 11.7647%;
-    top:37.7527%;
+    width: 150px;
+    height: 44px;
+    top:140.44px;
     border-color: rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    line-height:105.8823%; /*18px;*/
+    font-size: 14px;
+    line-height:18px;
     color: rgba(31,32,65,0.75);
+    padding: 7px 1px 8.44px 10px;
+    font-weight: normal;
     text-transform: uppercase;
-    padding: 11.56px 15px 8.44px 15px;
+    font-family: "Montserrat", "Arial", serif;
 }
 
 .main .checkform .info #checkin{
-    left: 7.8947%;
+    left: 30px;
 }
 
 .main .checkform .info #checkout{
-    left: 52.6315%;
+    left: 200px;
 }
 
 .main .checkform .info .guests{
     position: absolute;
-    width: 11.3158%;
-    height: 4.0107%;
-    left: 7.8947%;
-    top: 54.8128%;
-    font-weight: bold;
-    text-transform: uppercase;
+    width: 43px;
+    height: 15px;
+    left: 30px;
+    top: 205px;
 }
 
 .main .checkform .info #guests{
     position: absolute;
-    width: 84.2105%;
-    height: 11.7647%;
-    left: 7.8947%;
-    top: 60.4839%;
+    width: 320px;
+    height: 44px;
+    left: 30px;
+    top: 225px;
     border-color: rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    line-height: 105.8823%;/*18px;*/
+    font-size: 14px
+    line-height: 18px;
+    font-weight: normal;
     color: rgba(31,32,65,0.75);
-    padding: 13px 15px;
+    padding: 10px 5px 13px 10px;
+    font-family: "Montserrat", "Arial", serif;
 }
 
 .main .checkform .info .button{
@@ -269,13 +284,16 @@ header .clearfix{
     border:2px solid #bc9cff;
     border-radius: 22px;
     font-weight: bold;
-    font-size:85.7143%; /*12px;*/
-    line-height:88.2353%; /*15px;*/
+    font-family: "Montserrat", "Arial", serif;
+    text-align: center;
+    font-style: normal;
+    font-size:12px;
+    line-height:15px;
     text-transform: uppercase;
-    width: 84.2105%;
-    height: 11.7670%;
-    top: 80.6451%;
-    left: 7.8947%;
+    width: 318px;
+    height: 42px;
+    top: 300px;
+    left: 30px;
     color:#ffffff;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -283,57 +301,72 @@ header .clearfix{
 
 .main .motto{
     position: absolute;
-    min-width: 20.625%;
-    max-width: 25%;
-    width: auto;
-    min-height:  4.6967%;
-    height: auto;
-    bottom:2.1661%;
-    right: 9.7222%;
+    width: 297px;
+    height: 48px;
+    bottom:20px;
+    left: 1010px;
     text-align: right;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31,32,65,0.75);
+    font-weight: normal;
+    font-style: normal;
+    font-family:  "Montserrat", "Arial", serif;
+    text-transform: none;
 }
 
 footer{
     position: relative;
     width:inherit;
-    height: 32.9114%;
+    height: 442px;
 }
 
 footer .links{
-    margin-left: 45%;
+    margin-left: 440px;
+    height: 372px;
 }
 
 footer .links .logo{
-    top:22.6244%;
+    top:113.33px;
     }
 
 footer .links > p{
     position: absolute;
-    min-height: 16.2896%;
-    height: auto;
-    max-width: 18.0555%;
-    width: auto;
-    top: 36.1991%;
-    left:9.7222%;
+    height: 72px;
+    width: 260px;
+    top: 160px;
+    left:140px;
+    font-size: 14px;
     line-height: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Montserrat", "Arial", serif;
     color: rgba(31,32,65,0.75);
 }
 
 footer .links .footer_navigation h2{
     text-transform: uppercase;
-    font-size: 85.7143%;
-    line-height: 88.2353%;
+    font-size: 12px;
+    line-height: 15px;
     font-weight: bold; 
 }
 
 footer .links .footer_navigation{
     display: inline-block;
-    margin-right: 10%;
-    margin-top:7.5746%;
+    margin-top:104px;
     vertical-align: top;
+}
+
+footer .links div:nth-of-type(2){
+    margin-right: 57px;
+} 
+
+footer .links div:nth-of-type(3){
+    margin-right: 85px;
+} 
+
+footer .links div:nth-of-type(4){
+    margin-right: 51px;
 }
 
 footer .links div:nth-of-type(5){
@@ -354,15 +387,21 @@ footer .links .footer_navigation div{
 
 footer .links .footer_navigation ul li,
 footer .links .footer_navigation p{
-    margin:11.9048% 0;
+    margin:21px 0;
     color: rgba(31,32,65,0.5);
 }
 
 
 
 footer .links .footer_navigation p{
-    width:18.0555%;
-    height:10.8597%;
+    width:260px;
+    height:48px;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat", "Arial", serif;
 }
 
 footer .links .footer_navigation #email{
@@ -371,7 +410,7 @@ footer .links .footer_navigation #email{
     box-sizing: border-box;
     border-radius: 4px;
     color: rgba(31,32,65,0.25);
-    width:200px;/*18.0555%;*/
+    width:260px;/*18.0555%;*/
     height:44px;
     padding: 12px 15px 8px 15px;
 }
@@ -390,7 +429,7 @@ footer .links .footer_navigation .newsletter .letters{
     color: rgba(31,32,65,0.25);
     width:44px;/*18.0555%;*/
     height:41px;
-    left: 156px;
+    left: 216px;
     top: -43px;
     background-color: #ffffff;
     background-image: url(../fonts/baseline-arrow_forward-24px.svg);
@@ -407,29 +446,32 @@ footer .links .footer_navigation .newsletter .letters{
 footer .copyright{
     position: relative;
     width: inherit;
-    height: 15.8371%;
+    height: 70px;
     border-top:1px solid rgba(31, 32, 65, 0.75);
-    top: 53%;
 }
 
 footer .copyright p{
     position: absolute;
-    left:9.7222%;
-    top:38.5714%;
-    width: 25.4861%;
-    height: 25.7143%;
+    left:140px;
+    top:26px;
+    width: 377px;
+    height: 18px;
     color: rgba(31, 32, 65, 0.75);
-    line-height: 141.1765%;
+    font-size: 14px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat", "Arial", serif;
 }
 
 footer .copyright .social_networks{
     position: absolute;
-    left: 82.5%;
-    top:34.2857%;
+    left: 1188px;
+    top:23px;
 }
 
 footer .copyright .social_networks a{
-    margin-right: 20px;
+    margin-right: 17px;
 }
 
 footer .copyright .social_networks a:last-child{
