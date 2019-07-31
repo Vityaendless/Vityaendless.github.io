@@ -152,14 +152,14 @@ header .button{
 }
 
 header #auth{
-    width: 87px;
+    width: 83px;
     color:#BC9CFF;
     background-color: inherit;
 /*    margin-bottom: 5px;*/
 }
 
 header #check{
-    width: 196px;
+    width: 192px;
     color:#ffffff;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
