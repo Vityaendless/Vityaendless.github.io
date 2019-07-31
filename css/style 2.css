@@ -152,18 +152,18 @@ header .button{
 }
 
 header #auth{
-    width: 80px;
+    width: 75px;
     color:#BC9CFF;
     background-color: inherit;
 /*    margin-bottom: 5px;*/
 }
 
 header #check{
-    width: 190px;
+    width: 185px;
     color:#ffffff;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 header .clearfix{
