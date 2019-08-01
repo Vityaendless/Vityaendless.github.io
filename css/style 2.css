@@ -18,26 +18,51 @@ body{
     margin:0;
     padding:0;
     background-color: #ffffff;
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-style: normal;*/
-    font-size:14px;
-    line-height: 17px;
 }
 
 ul{
     list-style: none; 
-    padding: 0;
-    margin: 0;
-    font-size:14px;
-    line-height: 17px;
 }
 
-h2, p{
+h2, p, ul{
         margin: 0;
         padding: 0;
 }
 
-/*------------------------*/
+/*---------СТИЛИ ДЛЯ ТЕКСТА---------------*/
+
+.simple_text{
+    font-size:14px;
+    line-height: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Montserrat", "Arial", serif;
+}
+
+.buttons_text{
+    font-size: 12px;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Arial", serif;  
+}
+
+.labels_text{
+    font-size: 14px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat", "Arial", serif; 
+}
+
+.banners_text{
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat", "Arial", serif;    
+}
 
 /*----ОБЩИЕ СТИЛИ ДЛЯ ЛОГОТИПА-----*/
 .logo{
@@ -67,9 +92,6 @@ header{
     box-sizing: border-box;
     height: 70px;
     padding:0 140px 0 140px;
-    font-size:14px;
-    line-height: 17px;
-    font-weight: bold;
 }
 
 header .logo{
@@ -94,10 +116,6 @@ header .header_navigation > ul > li{
     display: inline-block;
     margin-right: 17px;
     height:18px;
-    font-size: 14px;
-    line-height: 17px;
-    font-style: normal;
-    font-weight: normal;
 }
 
 header .header_navigation .is_included{
@@ -142,14 +160,10 @@ header .button{
     height: 34px;
     border:2px solid #bc9cff;
     border-radius: 22px;
-    font-weight:600;
-    font-size:12px;
-    line-height:15px;
-    text-transform: uppercase;
     margin-top: 18px;
     text-align: center;
-    letter-spacing: 0.04em;
-    padding: 9px 20px 10px 20px;
+/*    letter-spacing: 0.04em;*/
+    padding: 8px 20px 10px 18px;
     font-style: normal;
     box-sizing: border-box;
 }
@@ -182,12 +196,6 @@ header .clearfix{
     background-size:auto 900px;/*1534px 1000px*/
     background-position:0 -70px;
     background-repeat: no-repeat;
-    font-family: "Montserrat", "Arial", serif;
-    font-size: 12px;
-    line-height: 15px;
-    font-style: normal;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .main .checkform{
@@ -212,9 +220,10 @@ header .clearfix{
     top:40px;
     font-size:24px;
     line-height:30px;
-    text-transform: none;
     font-family: "Quicksand", "Arial", sans-serif;
-    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight:700;
+    letter-spacing: 0.050em;
     color: #1f2041;
 }
 
@@ -241,13 +250,9 @@ header .clearfix{
     border-color: rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    font-size: 14px;
-    line-height:18px;
     color: rgba(31,32,65,0.75);
     padding: 7px 1px 8.44px 10px;
-    font-weight: normal;
     text-transform: uppercase;
-    font-family: "Montserrat", "Arial", serif;
 }
 
 .main .checkform .info #checkin{
@@ -274,26 +279,16 @@ header .clearfix{
     top: 225px;
     border-color: rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 14px
-    line-height: 18px;
-    font-weight: normal;
+    border-radius: 4px;ы
     color: rgba(31,32,65,0.75);
     padding: 10px 5px 13px 10px;
-    font-family: "Montserrat", "Arial", serif;
 }
 
 .main .checkform .info .button{
     position: absolute;
     border:2px solid #bc9cff;
     border-radius: 22px;
-    font-weight: bold;
-    font-family: "Montserrat", "Arial", serif;
     text-align: center;
-    font-style: normal;
-    font-size:12px;
-    line-height:15px;
-    text-transform: uppercase;
     width: 318px;
     height: 42px;
     top: 300px;
@@ -310,13 +305,7 @@ header .clearfix{
     bottom:20px;
     left: 1010px;
     text-align: right;
-    font-size: 14px;
-    line-height: 24px;
     color: rgba(31,32,65,0.75);
-    font-weight: normal;
-    font-style: normal;
-    font-family:  "Montserrat", "Arial", serif;
-    text-transform: none;
 }
 
 footer{
@@ -338,21 +327,9 @@ footer .links > p{
     position: absolute;
     height: 72px;
     width: 260px;
-    top: 160px;
+    top: 158px;
     left:140px;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: normal;
-    font-style: normal;
-    font-family: "Montserrat", "Arial", serif;
     color: rgba(31,32,65,0.75);
-}
-
-footer .links .footer_navigation h2{
-    text-transform: uppercase;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: bold; 
 }
 
 footer .links .footer_navigation{
@@ -362,15 +339,15 @@ footer .links .footer_navigation{
 }
 
 footer .links div:nth-of-type(2){
-    margin-right: 57px;
+    margin-right: 52px;
 } 
 
 footer .links div:nth-of-type(3){
-    margin-right: 85px;
+    margin-right: 90px;
 } 
 
 footer .links div:nth-of-type(4){
-    margin-right: 51px;
+    margin-right: 52px;
 }
 
 footer .links div:nth-of-type(5){
@@ -391,22 +368,19 @@ footer .links .footer_navigation div{
 
 footer .links .footer_navigation ul li,
 footer .links .footer_navigation p{
-    margin:21px 0;
+    margin:20px 0;
     color: rgba(31,32,65,0.5);
 }
 
-
+footer .links .footer_navigation ul li{
+    margin:22px 0;
+}
 
 footer .links .footer_navigation p{
     width:260px;
     height:48px;
-    text-transform: none;
-    font-size: 14px;
-    line-height: 24px;
-    font-style: normal;
-    font-weight: normal;
-    font-family: "Montserrat", "Arial", serif;
 }
+/*_________________Строка для Email_______________________*/
 
 footer .links .footer_navigation #email{
     border: 1px solid rgba(31,32,65,0.25);
@@ -416,7 +390,7 @@ footer .links .footer_navigation #email{
     color: rgba(31,32,65,0.25);
     width:260px;/*18.0555%;*/
     height:44px;
-    padding: 12px 15px 8px 15px;
+    padding: 10px 15px 10px 16px;
 }
 /*--------------------------------------------------*/
 footer .links .footer_navigation .newsletter{
@@ -461,11 +435,6 @@ footer .copyright p{
     width: 377px;
     height: 18px;
     color: rgba(31, 32, 65, 0.75);
-    font-size: 14px;
-    line-height: 17px;
-    font-style: normal;
-    font-weight: normal;
-    font-family: "Montserrat", "Arial", serif;
 }
 
 footer .copyright .social_networks{
