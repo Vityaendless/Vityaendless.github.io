@@ -2,13 +2,22 @@
 @font-face { 
   font-family: "Montserrat"; 
   src: url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff2"), 
-       url("../fonts/Montserrat/Montserrat-Regular.ttf") format("ttf"); 
+       url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); 
 }
 
 @font-face { 
   font-family: "Quicksand"; 
-  src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format("ttf"), 
-       url("Fontname.woff") format("woff");  
+  src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");  
+}
+
+@font-face {
+   font-family: "Material Icons";
+   src: url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.eot"); /* For IE6-8 */
+   src: local("Material Icons"),
+        local("MaterialIcons-Regular"),
+        url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.woff2") format("woff2"),
+        url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.woff") format("woff"),
+        url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.ttf") format("truetype");
 }
 
 body{
@@ -124,15 +133,23 @@ header .header_navigation .is_included{
 
 header .header_navigation .is_included::before{
     position: absolute;
-    content:"";
-    top:5px;
-    left: 112%;
-    height: 6px;
-    width: 6px;
-    border-bottom: 2px solid rgba(31,32,65,0.5);
+    content:"expand_more";
+    top:0px;
+    left: 104%;
+    height: 21px;
+    width: 24px;
+    font-family: "Material Icons", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 20px;
+    color: rgba(31,32,65,0.5);
+ /*   border-bottom: 2px solid rgba(31,32,65,0.5);
     border-right: 2px solid rgba(31,32,65,0.5);
     background-repeat: no-repeat;
-    transform: rotate(45deg);
+    transform: rotate(45deg);*/
 }
 
 header .header_navigation ul li > ul {
@@ -144,6 +161,8 @@ header .header_navigation ul li:hover > ul {
     position: absolute; 
     border: 1px solid black;
     background-color: yellow;
+    z-index: 100;
+    width: 100px;
 }
 
 header .header_navigation ul li > ul:hover {
@@ -151,6 +170,8 @@ header .header_navigation ul li > ul:hover {
     position: absolute; 
     border: 1px solid black;
     background-color: yellow;
+    z-index: 100;
+    width: 100px;
 }
 
 /*-----КНОПКИ---------*/
@@ -279,9 +300,28 @@ header .clearfix{
     top: 225px;
     border-color: rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px;ы
+    border-radius: 4px;
     color: rgba(31,32,65,0.75);
     padding: 10px 5px 13px 10px;
+}
+
+.main .checkform .info #guests::before{
+    position: absolute;
+    content:"expand_more";
+    top:365.56px;
+    left: 445.74px;
+    height: 44px;
+    width: 44px;
+    font-family: "Material Icons", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: #ffffff;
+    color: rgba(31,32,65,0.5);
+    z-index: 200;
 }
 
 .main .checkform .info .button{
@@ -296,6 +336,25 @@ header .clearfix{
     color:#ffffff;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.main .checkform .info .button::before{
+    position: absolute;
+    content:"arrow_forward";
+    top:440px;
+    left: 446px;
+    height: 44px;
+    width: 44px;
+    font-family: "Material Icons", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: transparent;
+    color: #ffffff;
+    z-index: 200;
 }
 
 .main .motto{
@@ -404,20 +463,19 @@ footer .links .footer_navigation .newsletter .letters{
     border-right: 1px solid rgba(31,32,65,0.25);
     box-sizing: border-box;
     border-radius: 4px;
-    color: rgba(31,32,65,0.25);
     width:44px;/*18.0555%;*/
     height:41px;
     left: 216px;
     top: -43px;
     background-color: #ffffff;
-    background-image: url(../fonts/baseline-arrow_forward-24px.svg);
-    font-size: 24px;
-    line-height: 24px;
+    color: #c9afe4;/*linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);*/
+    font-family: "Material Icons", "Arial", serif;
+    font-style: normal;
+    font-weight: normal;
     text-align: center;
     vertical-align: middle;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); 
-    -webkit-background-clip: text; 
-    color: transparent;
+    font-size: 24px;
+    line-height: 24px;
 }
 /*--------------------------------------------------*/
 
