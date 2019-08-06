@@ -24,11 +24,11 @@
 
 @font-face {
    font-family: "Material Icons";
- /*  src: url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.eot");*/ /* For IE6-8 */
-   src: /*local("Material Icons"),
+   src: url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.eot"); /* For IE6-8 */
+   src: local("Material Icons"),
         local("MaterialIcons-Regular"),
         url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.woff2") format("woff2"),
-        url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.woff") format("woff"),*/
+        url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.woff") format("woff"),
         url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.ttf") format("truetype");
 }
 
@@ -157,9 +157,6 @@ header .header_navigation .is_included::before{
     font-size: 24px;
     line-height: 20px;
     color: rgba(31,32,65,0.5);
-    
-      /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
     
     
  /* border-bottom: 2px solid rgba(31,32,65,0.5);
