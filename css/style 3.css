@@ -10,18 +10,6 @@
   src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");  
 }
 
-/*@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot);*/ /* For IE6-8 */
-/*  src: local('Material Icons'),
-    local('MaterialIcons-Regular'),
-    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-}*/
-
 @font-face {
    font-family: "Material Icons";
    src: url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.eot"); /* For IE6-8 */
@@ -34,8 +22,10 @@
 
 body{
     width: auto;
-    height: 1343px;
-    width: 1440px;
+    height: auto;
+    max-width: 1920px;
+    min-width: 600px;
+    max-height: 1343px;
     margin:0;
     padding:0;
     background-color: #ffffff;
@@ -45,12 +35,12 @@ ul{
     list-style: none; 
 }
 
-h2, p, ul{
-        margin: 0;
-        padding: 0;
+*{
+    margin: 0;
+    padding: 0;
 }
-/*---------СТИЛИ ДЛЯ ТЕКСТА---------------*/
 
+/*---------СТИЛИ ДЛЯ ТЕКСТА---------------*/
 .simple_text{
     font-size:14px;
     line-height: 17px;
@@ -110,8 +100,9 @@ header{
     position: relative;
     width: inherit;
     box-sizing: border-box;
-    height: 70px;
-    padding:0 140px 0 140px;
+    height: auto;
+    min-height: 70px;
+    padding:0 9.7222% 0 9.7222%;
 }
 
 header .logo{
@@ -158,11 +149,11 @@ header .header_navigation .is_included::before{
     line-height: 20px;
     color: rgba(31,32,65,0.5);
     
-    
  /* border-bottom: 2px solid rgba(31,32,65,0.5);
     border-right: 2px solid rgba(31,32,65,0.5);
     background-repeat: no-repeat;
     transform: rotate(45deg);*/
+
 }
 
 header .header_navigation ul li > ul {
@@ -201,13 +192,13 @@ header .button{
     font-style: normal;
     box-sizing: border-box;
     z-index: 700;
+    margin-bottom: 5px;
 }
 
 header #auth{
     width: 87px;
     color:#BC9CFF;
     background-color: inherit;
-/*    margin-bottom: 5px;*/
 }
 
 header #check{
@@ -225,10 +216,11 @@ header .clearfix{
 /*----СОДЕРЖАНИЕ СТРАНИЦЫ--------*/
 .main{
     position: relative;
-    height: 830px;
+    min-height: 830px;
+    height: auto;
     width: inherit;
     background-image: url(../img/fon-on-landing-page.png);
-    background-size:auto 900px;/*1534px 1000px*/
+    background-size:100%/*auto*/ 900px;/*1534px 1000px*/
     background-position:0 -70px;
     background-repeat: no-repeat;
 }
@@ -391,10 +383,12 @@ header .clearfix{
 
 .main .motto{
     position: absolute;
-    width: 297px;
-    height: 48px;
-    bottom:20px;
-    left: 1010px;
+    width: 20.625vw;
+    min-width: 150px;
+    max-width: 297px;
+    height: 5.7831%;
+    bottom:2.4096%;
+    left: 70.1389%;
     text-align: right;
     color: rgba(31,32,65,0.75);
 }
@@ -402,7 +396,10 @@ header .clearfix{
 footer{
     position: relative;
     width:inherit;
-    height: 442px;
+    max-width: 1920px;
+    min-width: 600px;
+    min-height: 442px;
+    height: auto;
 }
 
 footer .links{
