@@ -1,0 +1,95 @@
+/*---ШРИФТЫ----*/
+@font-face { 
+  font-family: "Montserrat"; 
+  src: url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff2"), 
+       url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"); 
+}
+
+@font-face { 
+  font-family: "Quicksand"; 
+  src: url("../fonts/Quicksand/Quicksand-Regular.ttf") format("truetype");  
+}
+
+/*@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);*/ /* For IE6-8 */
+/*  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}*/
+
+@font-face {
+   font-family: "Material Icons";
+ /*  src: url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.eot");*/ /* For IE6-8 */
+   src: /*local("Material Icons"),
+        local("MaterialIcons-Regular"),
+        url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.woff2") format("woff2"),
+        url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.woff") format("woff"),*/
+        url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.ttf") format("truetype");
+}
+
+/*---ОБЩИЕ СТИЛИ----*/
+
+body{
+    background-color: #e5e5e5;
+    width: auto;
+    min-width: 600px;
+    max-width: 1960px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+ul{
+    list-style: none; 
+}
+
+h2, p, ul{
+        margin: 0;
+        padding: 0;
+}
+/*---------СТИЛИ ДЛЯ ТЕКСТА---------------*/
+
+.simple_text{
+    font-size:1.167em;
+    line-height: 1.133em;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Montserrat", "Arial", serif;
+}
+
+.buttons_text{
+    font-size: 1em;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Arial", serif;  
+}
+
+.labels_text{
+    font-size: 14px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat", "Arial", serif; 
+}
+
+.banners_text{
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Montserrat", "Arial", serif;    
+}
+
+.icons_text{
+    font-size: 24px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: "Material Icons", serif;
+}

@@ -1,0 +1,174 @@
+/*__________Лого___________*/
+
+.gray_logo{
+  padding: 30px 0 0 30px;  
+}
+
+/*_______________________*/
+
+/*______Header eng_______*/
+.header_eng{
+    margin-top: 150px;
+    padding: 0 9.7222% 0 9.7222%;
+    background-color: #fff;
+}
+
+/*----СТИЛИ ДЛЯ ЛОГОТИПА-----*/
+header .logo{
+    position: relative;
+    float: left;
+    margin: 28.33px 10px 0 52.5px;
+}
+
+header .logo::before{
+    position: absolute;
+    top: -13.33px;
+    left: -52.5px;
+    content:"";
+    height: 40px;
+    width: 40px;
+    background: url(../img/Logo.svg) no-repeat;
+}
+/*---------*/
+
+/*-----Шапка------*/
+header{
+    width: inherit;
+    height: auto;
+}
+
+/*--------НАВИГАЦИЯ В ШАПКЕ------*/
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_navigation{
+    margin-top: 26px;
+}
+
+.header_navigation li{
+    color: rgba(31,32,65,0.5);
+}
+
+.header_navigation > ul > li{
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+}
+
+.header_navigation>ul>li:first-child{
+   font-weight: bolder;
+}
+
+.header_navigation .is_included{
+    margin-right:44px;
+}
+
+.header_navigation .is_included::before{
+    position: absolute;
+    content:"expand_more";
+    top:0px;
+    left: 104%;
+    height: 21px;
+    width: 24px;
+    font-family: "Material Icons", serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2em;
+    line-height: 0.75em;
+    color: rgba(31,32,65,0.5);
+
+ /* border-bottom: 2px solid rgba(31,32,65,0.5);
+    border-right: 2px solid rgba(31,32,65,0.5);
+    background-repeat: no-repeat;
+    transform: rotate(45deg);*/
+}
+
+.header_navigation ul li > ul {
+    display: none;
+}
+
+.header_navigation ul li:hover > ul {
+    display: block;
+    position: absolute; 
+    border: 1px solid black;
+    background-color: yellow;
+    width: 100px;
+    z-index: 100;
+}
+
+.header_navigation ul li > ul:hover {
+    display: block;
+    position: absolute; 
+    border: 1px solid black;
+    background-color: yellow;
+    z-index: 100;
+    width: 100px;
+}
+/*---------------------BUTTONS-----------------------------------*/
+
+.btns{
+    margin-top: 18px;
+}
+
+.button{
+    border:2px solid #bc9cff;
+    box-sizing: border-box;
+    border-radius: 22px;
+    text-align: center;
+    padding: 9px 20px 10px 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+header #auth{
+    color:#BC9CFF;
+    background-color: inherit;
+}
+
+header #check{
+    color:#ffffff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+/*______________________*/
+
+/*---------------SIMPLE_HEADER_ENG-----------*/
+.s_header_eng{
+    margin-top: 40px;
+    padding: 0 9.7222% 0 9.7222%;
+    background-color: #fff;
+}
+
+.s_header_eng .header_navigation > ul > li{
+    margin-right: 29px;
+}
+
+.s_header_eng .header_navigation{
+    margin: 25px 0 27px;
+}
+
+.s_header_eng .header_navigation .is_included{
+    margin-right:44px;
+}
+
+.s_header_eng .author{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 150px;
+}
+
+.s_header_eng .svg_line{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.s_header_eng .author_name{
+    display: inline-block;
+    color: rgba(31,32,65, 0.5);
+    vertical-align:75%;
+}
+/*-------------------------------------------*/
