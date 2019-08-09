@@ -1,10 +1,15 @@
+/*-----Шапка------*/
+header{
+    width: inherit;
+    height: auto;
+    padding:0 9.7222% 0 9.7222%;
+}
+
 /*----СТИЛИ ДЛЯ ЛОГОТИПА-----*/
 .logo{
     position: relative;
     float: left;
-    margin-left: 52.5px;
-    margin-top: 28.33px;
-    margin-right: 10px;
+    margin: 28.33px 10px 0 52.5px;
 }
 
 .logo::before{
@@ -18,14 +23,7 @@
 }
 /*---------*/
 
-/*-----Шапка------*/
-header{
-    width: inherit;
-    height: auto;
-}
-
 /*--------НАВИГАЦИЯ В ШАПКЕ------*/
-
 .menu{
     display: flex;
     justify-content: flex-end;
@@ -45,12 +43,9 @@ header{
     margin-right: 20px;
 }
 
-.header_navigation>ul>li:last-child{
-    margin-right: 20px;
-}
 
 .header_navigation .is_included{
-    margin-right:40px; /*44px;*/
+    margin-right:44px; /*44px;*/
 }
 
 .header_navigation .is_included::before{
@@ -68,8 +63,6 @@ header{
     font-size: 2em;
     line-height: 0.75em;
     color: rgba(31,32,65,0.5);
-    margin-right: 24px;
-    
 
  /* border-bottom: 2px solid rgba(31,32,65,0.5);
     border-right: 2px solid rgba(31,32,65,0.5);
@@ -98,11 +91,10 @@ header{
     z-index: 100;
     width: 100px;
 }
-
-/*--------------------------------------------------------*/
+/*---------------------BUTTONS-----------------------------------*/
 
 .btns{
-        margin-top: 18px;
+    margin-top: 18px;
 }
 
 .button{

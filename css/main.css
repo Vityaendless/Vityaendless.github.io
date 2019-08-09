@@ -31,17 +31,16 @@
         url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.woff") format("woff"),*/
         url("../fonts/Material_icons/iconfont/MaterialIcons-Regular.ttf") format("truetype");
 }
-
 /*---ОБЩИЕ СТИЛИ----*/
-
 body{
-    padding:0 9.722% 0 9.7222%;
     background-color: #ffffff;
     width: auto;
     min-width: 600px;
-    max-width: 1960px;
+    max-width: 1900px;
     font-size: 12px;
     line-height: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 ul{
