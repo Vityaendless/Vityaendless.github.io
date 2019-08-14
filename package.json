@@ -1,0 +1,10 @@
+{
+  "name": "2kurs",
+  "version": "1",
+  "description": "test project",
+  "main": "index.js",
+  "repository": "\\",
+  "author": "Vitya",
+  "license": "-",
+  "private": null
+}
